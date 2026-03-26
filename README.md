@@ -21,7 +21,7 @@ Test the configuration and reload apache2:
 
     sudo apache2ctl configtest && sudo systemctl reload apache2
 
-Verify by checking the access logs /var/log/apache2/access.log (replace with the name of your access log). It should now record the acutal IP adresses.
+Verify by checking the access logs */var/log/apache2/access.log* (replace with the name of your access log). It should now record the acutal IP adresses.
 
 ## Configuring Fail2ban
 Install Fail2ban:
@@ -94,6 +94,7 @@ Replace access.log with your website log file.
 
 ## Start and verify Fail2ban
 Start Fail2ban:
+
     sudo systemctl enable fail2ban
     sudo systemctl start fail2ban
 
