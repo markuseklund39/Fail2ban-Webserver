@@ -35,7 +35,7 @@ Create a configuration file refering to the correct log files:
 Add:
 
     [DEFAULT]
-    bantime = 3600
+    bantime = 86400
     findtime = 600 
     maxretry = 3 
 
