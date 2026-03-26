@@ -6,12 +6,12 @@ Fail2ban is a tool for intrusion prevention designed to prevent brutoforce attac
 ## RemoteIP
 Because of the use a Cloudflare tunnel, the visitors are shown in the apache logs as localhost (127.0.0.1). To get the real IP adress you need to activate the remoteip module:
 
-  sudo a2enmod remoteip
+    sudo a2enmod remoteip
 
-Then edit the configuation the website /etc/apache2/sites-enabled/website.conf (replace with correct configuration file). Add under  <VirtualHost>:
+Then edit the configuation the website */etc/apache2/sites-enabled/website.conf* (replace with correct configuration file). Add under  <VirtualHost>:
 
-  apacheRemoteIPHeader X-Forwarded-For
-  RemoteIPTrustedProxy 127.0.0.1
+    apacheRemoteIPHeader X-Forwarded-For
+    RemoteIPTrustedProxy 127.0.0.1
 
 You may also want to add Cloudflare IP:s as trusted IP adresses. LogFormat in the apache configuration /etc/apache2/apache2.conf also need to be changed. Find combined LogFormat and change %h to %a:est 
 
