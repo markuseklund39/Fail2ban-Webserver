@@ -99,12 +99,15 @@ Start Fail2ban:
     sudo systemctl start fail2ban
 
 Check status:
+
     sudo fail2ban-client status
 
-Check a specific jail: 
+Check a specific jail:
+
     sudo fail2ban-client status apache-wordpress
 
 Monitor Fail2ban logs:
+
     sudo tail -f /var/log/fail2ban.log
 s
 udo tail -f /var/log/fail2ban.log
