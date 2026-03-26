@@ -1,7 +1,5 @@
 # Fail2ban-Webserver
-Setting up fail2ban on a webserver using a cloudflare tunnel.
-
-Fail2ban is a tool for intrusion prevention designed to prevent brutoforce attacks. It monitors logs and block IP addresses that make too many login attempts. Here is a setup of Fail2ban on a apache webserver using a Cloudflare tunnel.
+Fail2ban is a tool for intrusion prevention designed to prevent bruteforce attacks. It monitors logs and block IP addresses that make too many login attempts. Here is a setup of Fail2ban on a apache webserver using a Cloudflare tunnel.
 
 ## RemoteIP
 Because of the use a Cloudflare tunnel, the visitors are shown in the apache logs as localhost (127.0.0.1). To get the real IP adress you need to activate the remoteip module:
