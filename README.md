@@ -109,5 +109,3 @@ Check a specific jail:
 Monitor Fail2ban logs:
 
     sudo tail -f /var/log/fail2ban.log
-s
-udo tail -f /var/log/fail2ban.log
